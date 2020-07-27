@@ -112,6 +112,7 @@ def download_week_3_resources(save_path):
     # Originals:
     # http://www.robots.ox.ac.uk/~vgg/data/flowers/102/102flowers.tgz
     # http://www.robots.ox.ac.uk/~vgg/data/flowers/102/imagelabels.mat
+    print("start")
     sequential_downloader(
         "v0.3",
         [
@@ -157,8 +158,8 @@ def download_week_6_resources(save_path):
 
 
 def link_all_keras_resources():
-    link_all_files_from_dir("../readonly/keras/datasets/", os.path.expanduser("~/.keras/datasets"))
-    link_all_files_from_dir("../readonly/keras/models/", os.path.expanduser("~/.keras/models"))
+    link_all_files_from_dir(os.path.expanduser("~/kaggle-ods/intro-to-dl/week3/readonly/keras/datasets/"), os.path.expanduser("~/.keras/datasets"))
+    link_all_files_from_dir(os.path.expanduser("~/kaggle-ods/intro-to-dl/week3/readonly/keras/datasets/"), os.path.expanduser("~/.keras/models"))
 
 
 def link_week_3_resources():

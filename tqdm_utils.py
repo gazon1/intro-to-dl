@@ -57,7 +57,8 @@ def use_simple_tqdm():
 
 
 def tqdm_notebook_failsafe(*args, **kwargs):
-    if use_simple_tqdm():
+    # if use_simple_tqdm():
+    if True:
         # tqdm is broken on Google Colab
         return SimpleTqdm(*args, **kwargs)
     else:
